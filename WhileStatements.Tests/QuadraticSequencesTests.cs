@@ -48,7 +48,7 @@
         [TestCase(3, 5, 7, 9, 1, ExpectedResult = 295)]
         [TestCase(3, 5, 7, 9, 2, ExpectedResult = 652)]
         [TestCase(3, 5, 7, 10, 1, ExpectedResult = 357)]
-        public long SumQuadraticSequenceTerms1_ReturnsSum(long a, long b, long c, long startN, long count)
+        public long SumQuadraticSequenceTerms2_ReturnsSum(long a, long b, long c, long startN, long count)
         {
             return QuadraticSequences.SumQuadraticSequenceTerms2(a, b, c, startN, count);
         }
