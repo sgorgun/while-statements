@@ -1,4 +1,4 @@
-﻿# While Statements
+# While Statements
 
 Beginner level task for practicing while statements.
 
@@ -13,12 +13,12 @@ The task has fifteen sub-tasks in five sections. Each sub-task is a small coding
 
 Basic understanding of [flowchart diagrams](https://en.wikipedia.org/wiki/Flowchart) (или см. русскоязычную [статью Блок-схема](https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D0%BE%D0%BA-%D1%81%D1%85%D0%B5%D0%BC%D0%B0)) is required to successfully complete the task. If you are not familiar with flowchart diagrams, read the Wikipedia article first.
 
-In this task use the only *while* and *if-else* statements. Using *for* or *do-while* iteration statements is not required.
+Use the only *while* and *if-else* statements in this task. Using *for* or *do-while* iteration statements is not required.
 
 
 ### Arithmetic Sequences
 
-An [arithmetic sequence](https://www.google.com/search?q=arithmetic+sequence) is a ordered set of terms (numbers) that have a common difference between each consecutive term.
+An [arithmetic sequence](https://www.google.com/search?q=arithmetic+sequence) is an ordered set of terms (numbers) that have a common difference between each consecutive term.
 
 The arithmetic sequence formula is given as,
 
@@ -40,13 +40,13 @@ $`\sum_{i=1}^{n} a+(i-1)*1=\sum_{i=0}^{n-1} a+i`$
 
 For the arithmetic sequence $`{5, 6, 7, 8, 9, ...}`$ the sum of the first five elements is 35 (5 + 6 + 7 + 8 + 9).
 
-The algorithm you have implement is shown on the flowchart diagram below. The flowchart notation has no special symbol for a _while_ statement. That's why a decision block is used to describe the algorithm.
+The algorithm you have to implement is shown on the flowchart diagram below. The flowchart notation has no special symbol for a _while_ statement, therefore a decision block is used it.
 
 ![Arithmetic Sequence 1 Diagram](images/as-1.png)
 
-Read and understand the diagram, and add the code to the _SumArithmeticSequenceTerms1_ method. 
+Read and analyze the diagram, add the code to the _SumArithmeticSequenceTerms1_ method. 
 
-1. Declare and initialize _sum_ and _i_ variables. Add the [return statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/jump-statements#the-return-statement) to return the _sum_ value.
+1. Declare and initialize the _sum_ and the _i_ variables. Add the [return statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/jump-statements#the-return-statement) to return the _sum_ value.
 
 ```cs
 public static int SumArithmeticSequenceTerms1(int a, int n)
@@ -57,7 +57,7 @@ public static int SumArithmeticSequenceTerms1(int a, int n)
 }
 ```
 
-2. Add the [while statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-while-statement) that iterates until _i_ is less then _n_.
+2. Add the [while statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-while-statement) that iterates until _i_ is less than _n_.
 
 ```cs
 public static int SumArithmeticSequenceTerms1(int a, int n)
@@ -129,7 +129,7 @@ public static int SumArithmeticSequenceTerms1(int a1, int n)
 
 Open the [ArithmeticSequences.cs](WhileStatements/ArithmeticSequences.cs) file, and navigate to the [SumArithmeticSequenceTerms2](WhileStatements/ArithmeticSequences.cs#L5) method.
 
-Implement the method that returns sum of an arithmetic sequence elements if the first term is 17 and the common difference is 33.
+Implement the method that returns the sum of an arithmetic sequence elements when the first term is 17 and the common difference is 33.
 
 $`\sum_{i=1}^{n} 17+(i-1)*33=\sum_{i=0}^{n-1} 17+i*33`$
 
@@ -150,7 +150,7 @@ public static int SumArithmeticSequenceTerms2(int n)
 }
 ```
 
-Experienced programmers consider using number literals with unexplained meaning as a *bad practice*. They call a such literal a [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)).
+Experienced programmers consider using number literals with unexplained meaning as a *bad practice*. They call such literals [magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming)).
 
 If you have a magic number in your code, [replace it with a symbolic constant](https://refactoring.guru/replace-magic-number-with-symbolic-constant):
 
@@ -177,23 +177,23 @@ public static int SumArithmeticSequenceTerms2(int n)
 
 Open the [ArithmeticSequences.cs](WhileStatements/ArithmeticSequences.cs) file, and navigate to the [SumArithmeticSequenceTerms3](WhileStatements/ArithmeticSequences.cs#L5) method.
 
-Implement the method that returns sum of an arithmetic sequence elements if the common difference is 3.
+Implement the method that returns the sum of an arithmetic sequence elements when the common difference is 3.
 
 $`\sum_{i=1}^{n} a+(i-1)*3=\sum_{i=0}^{n-1} a+i*3`$
 
-Introduce a constant to avoid having magic numbers in your code.
+Introduce a constant to avoid magic numbers in your code.
 
 
 #### Sub-task 4
 
 Open the [ArithmeticSequences.cs](WhileStatements/ArithmeticSequences.cs) file, and navigate to the [SumArithmeticSequenceTerms4](WhileStatements/ArithmeticSequences.cs#L5) method.
 
-Implement the method that returns sum of an arithmetic sequence elements.
+Implement the method that returns the sum of an arithmetic sequence elements.
 
 
 ### Quadratic Sequences
 
-A [quadratic sequence](https://www.google.com/search?q=quadratic+sequence) is an ordered set of terms that follow a rule based on the sequence $`n^2=1, 4, 9, 16, 25, ...`$.
+A [quadratic sequence](https://www.google.com/search?q=quadratic+sequence) is an ordered set of terms that follows a rule based on the sequence $`n^2=1, 4, 9, 16, 25, ...`$.
 
 The quadratic sequence formula is:
 
@@ -208,13 +208,13 @@ where,
 
 Open the [QuadraticSequences.cs](WhileStatements/QuadraticSequences.cs) file, and navigate to the [SumQuadraticSequenceTerms1](WhileStatements/QuadraticSequences.cs#L5) method.
 
-Implement the method that returns sum of a quadratic sequence terms that are below _maxTerm_.
+Implement the method that returns sum of a quadratic sequence terms that are less than _maxTerm_.
 
 The quadratic sequence with nth term $`a_{n}=3*n^2+5*n+7`$ is $`\{ 15, 29, 49, 75, 107, 145, ...\}`$.
 
-If the _maxTerm_ is 29, the sum is 44 (15 + 29 = 44). If the _maxTerm_ is 107, the sum is 275 (15 + 29 + 49 + 75 + 107 = 275).
+If _maxTerm_ is 29, the sum is 44 (15 + 29 = 44). If _maxTerm_ is 107, the sum is 275 (15 + 29 + 49 + 75 + 107 = 275).
 
-The algorithm you have implement is shown on the flowchart diagram below.
+The algorithm you have to implement is shown on the flowchart diagram below.
 
 ![Quadratic Sequence 1 Diagram](images/qs-1.png)
 
@@ -223,9 +223,9 @@ The algorithm you have implement is shown on the flowchart diagram below.
 
 Open the [QuadraticSequences.cs](WhileStatements/QuadraticSequences.cs) file, and navigate to the [SumQuadraticSequenceTerms2](WhileStatements/QuadraticSequences.cs#L5) method.
 
-Implement the method that returns sum of _count_ quadratic sequence terms starting with the _startN_ term.
+Implement the method that returns the sum of _count_ quadratic sequence terms starting with the _startN_ term.
 
-For the quadratic sequence $`\{ 15, 29, 49, 75, ...\}`$ the sum is 44 (15 + 29 = 44), if the _startN_ is 1 and _count_ is 2. If the _startN_ is 2 and _count_ is 3, the sum is 153 (29 + 49 + 75 = 153).
+For the quadratic sequence $`\{ 15, 29, 49, 75, ...\}`$ the sum is 44 (15 + 29 = 44), if the _startN_ is 1 and _count_ is 2. If _startN_ is 2 and _count_ is 3, the sum is 153 (29 + 49 + 75 = 153).
 
 
 ### Geometric Sequences
@@ -246,13 +246,13 @@ where,
 
 Open the [GeometricSequences.cs](WhileStatements/GeometricSequences.cs) file, and navigate to the [SumGeometricSequenceTerms1](WhileStatements/GeometricSequences.cs#L5) method.
 
-Implement the method that returns sum of a geometric sequence terms.
+Implement the method that returns the sum of a geometric sequence terms.
 
 $`\sum_{i=1}^{n}a*r^{i-1}=\sum_{i=0}^{n-1}a*r^{i}=a+a*r^1+a*r^2+a*r^3+...+a*r^{n-1}`$
 
-Use additional _while_ statement to raise a _r_ number to the power of _n_.
+Use an additional _while_ statement to raise an _r_ number to the power of _n_.
 
-The algorithm you have implement is shown on the flowchart diagram below.
+The algorithm you have to implement is shown on the flowchart diagram below.
 
 ![Geometric Sequence 1 Diagram](images/gs-1.png)
 
@@ -261,29 +261,29 @@ The algorithm you have implement is shown on the flowchart diagram below.
 
 Open the [GeometricSequences.cs](WhileStatements/GeometricSequences.cs) file, and navigate to the [SumGeometricSequenceTerms2](WhileStatements/GeometricSequences.cs#L5) method.
 
-Implement the method that returns  sum of a geometric sequence terms if the first term is 13 and the common ratio is 3.
+Implement the method that returns the sum of a geometric sequence terms when the first term is 13 and the common ratio is 3.
 
 $`\sum_{i=1}^{n}a*r^{i-1}=\sum_{i=0}^{n-1} 13*3^{i}=13+13*3^1+13*3^2+13*3^3+...+13*3^{n-1}`$
 
-Introduce a constant to avoid having magic numbers in your code.
+Introduce a constant to avoid magic numbers in your code.
 
 
 #### Sub-task 9
 
 Open the [GeometricSequences.cs](WhileStatements/GeometricSequences.cs) file, and navigate to the [CountGeometricSequenceTerms3](WhileStatements/GeometricSequences.cs#L5) method.
 
-Implement the method that counts terms in a geometric sequence that are less then or equals to a _maxTerm_.
+Implement the method that counts terms in a geometric sequence that are less than or equal to _maxTerm_.
 
-If the _a_ is 3 and _r_ is 2 the geometric sequence is $`\{3, 6, 12, 24, 48, ...\}`$. If _maxTerm_ is 3 the count equals to 1 ($`\{3\}`$). If the _maxTerm_ is 24 the count equals to 4 ($`\{3, 6, 12, 24\}`$).
+If _a_ is 3 and _r_ is 2 the geometric sequence is $`\{3, 6, 12, 24, 48, ...\}`$. If _maxTerm_ is 3 the count equals to 1 ($`\{3\}`$). If  _maxTerm_ is 24 the count equals to 4 ($`\{3, 6, 12, 24\}`$).
 
 
 #### Sub-task 10
 
 Open the [GeometricSequences.cs](WhileStatements/GeometricSequences.cs) file, and navigate to the [CountGeometricSequenceTerms4](WhileStatements/GeometricSequences.cs#L5) method.
 
-Implement the method that counts terms in a geometric sequence that are greater then or equals to a _minTerm_.
+Implement the method that counts terms in a geometric sequence that are greater than or equal to a _minTerm_.
 
-For the geometric sequence $`\{3, 6, 12, 24, 48, 96, 192, 384, 768, 1536, ...\}`$ the count equals to 4 ($`\{192, 384, 768, 1536\}`$) if the _n_ is 10 and the _minTerm_ is 192 . If the _minTerm_ is 768 the count equals to 2 ($`\{768, 1536\}`$).
+For the geometric sequence $`\{3, 6, 12, 24, 48, 96, 192, 384, 768, 1536, ...\}`$ the count equals to 4 ($`\{192, 384, 768, 1536\}`$) when _n_ is 10 and the _minTerm_ is 192 . If _minTerm_ is 768 the count equals to 2 ($`\{768, 1536\}`$).
 
 
 ### Digits Of a Number
@@ -292,14 +292,14 @@ For the geometric sequence $`\{3, 6, 12, 24, 48, 96, 192, 384, 768, 1536, ...\}`
 
 Open the [Digits.cs](WhileStatements/Digits.cs) file, and navigate to the [GetDigitsSum](WhileStatements/Products.cs#L5) method.
 
-Implement the method that finds sum of digits of _n_ number. For the number 123 the sum of digits is 6 (1 + 2 + 3).
+Implement the method that finds the sum of the digits of an _n_ number. For the number 123 the sum of the digits is 6 (1 + 2 + 3).
 
 
 #### Sub-task 12
 
 Open the [Digits.cs](WhileStatements/Digits.cs) file, and navigate to the [GetDigitsProduct](WhileStatements/Products.cs#L5) method.
 
-Implement the method that finds product of digits of _n_ number. For the number 123 the product of digits is 6 (1 * 2 * 3).
+Implement the method that finds product of the digits of an _n_ number. For the number 123 the product of the digits is 6 (1 * 2 * 3).
 
 
 ### Prime Numbers
@@ -308,21 +308,21 @@ Implement the method that finds product of digits of _n_ number. For the number 
 
 Open the [PrimeNumbers.cs](WhileStatements/PrimeNumbers.cs) file, and navigate to the [IsPrimeNumber](WhileStatements/PrimeNumbers.cs#L5) method.
 
-Implement the method that returns true if a _n_ is prime number; otherwise the method returns false.
+Implement the method that returns true when _n_ is a prime number; otherwise the method returns false.
 
 
 #### Sub-task 14
 
 Open the [PrimeNumbers.cs](WhileStatements/PrimeNumbers.cs) file, and navigate to the [GetLastPrimeNumber](WhileStatements/PrimeNumbers.cs#L5) method.
 
-Implement the method that returns the latest prime number in (0, n] interval.
+Implement the method that returns the latest prime number in the (0, n] interval.
 
 
 #### Sub-task 15
 
 Open the [PrimeNumbers.cs](WhileStatements/PrimeNumbers.cs) file, and navigate to the [SumPrimeNumbers](WhileStatements/PrimeNumbers.cs#L5) method.
 
-Implement the method that returns sum of the latest _count_ prime numbers in (0, n] interval.
+Implement the method that returns the sum of the latest _count_ prime numbers in the (0, n] interval.
 
 
 ## Fix Compiler Issues
