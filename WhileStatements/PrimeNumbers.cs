@@ -31,15 +31,16 @@
         public static uint GetLastPrimeNumber(uint n)
         {
             uint result = 0;
+            uint i = 2;
 
             if (n > 1)
             {
-                uint i = 2;
                 while (i < n)
                 {
-                    if ((n % i) == 0)
+                    while ((n % i) == 0)
                     {
                         n--;
+                        i = 2;
                     }
 
                     i++;
