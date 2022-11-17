@@ -54,8 +54,33 @@
 
         public static uint SumLastPrimeNumbers(uint n, uint count)
         {
-            // TODO 5-3. Implement the method that returns the sum of the latest _count_ prime numbers is (0, n] interval.
-            throw new NotImplementedException();
+            uint sum = 0;
+            uint i = 2;
+            uint myCount = 0;
+
+            if (n > 1)
+            {
+                while (myCount < count)
+                {
+                    while (i < n)
+                    {
+                        while (n % i == 0)
+                        {
+                            n--;
+                            i = 2;
+                        }
+
+                        i++;
+                    }
+
+                    sum += n;
+                    myCount++;
+                    n--;
+                    i = 2;
+                }
+            }
+
+            return sum;
         }
     }
 }

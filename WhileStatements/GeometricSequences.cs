@@ -53,7 +53,6 @@
         public static uint CountGeometricSequenceTerms3(uint a, uint r, uint maxTerm)
         {
             uint count = 0;
-            uint i = 0;
 
             while (a <= maxTerm)
             {
